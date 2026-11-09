@@ -439,6 +439,12 @@ INDEX_HTML = r"""<!doctype html>
   button:hover { border-color: #4a5670; background: #141821; }
   input[type=range] { width: 110px; accent-color: var(--accent); }
   #status { color: var(--dim); margin-left: auto; white-space: nowrap; }
+  .license {
+    color: var(--dim); text-decoration: none; white-space: nowrap;
+    font-size: 11px; letter-spacing: .04em; padding: 1px 8px;
+    border: 1px solid var(--line); border-radius: 999px;
+  }
+  .license:hover { color: var(--fg); border-color: #4a5670; }
   #viewport { flex: 1; overflow-y: auto; overflow-x: hidden; position: relative; }
   #spacer { position: relative; width: 100%; }
   #layer { position: absolute; inset: 0; }
@@ -533,6 +539,9 @@ INDEX_HTML = r"""<!doctype html>
   </div>
   <button id="random">random</button>
   <div id="status">connecting...</div>
+  <a class="license" href="https://creativecommons.org/publicdomain/zero/1.0/"
+     target="_blank" rel="noopener"
+     title="License: CC0 1.0 Universal (public domain dedication)">CC0 1.0</a>
 </header>
 
 <div id="viewport"><div id="spacer"><div id="layer"></div></div></div>
